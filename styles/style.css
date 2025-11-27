@@ -33,7 +33,7 @@ p, h1, h2 {
     width: 100%;
     height: 100px;
     justify-content: center;
-    gap: 45px;
+    gap: 60px;
     background: #7793ed;
     background: linear-gradient(180deg, rgba(119, 147, 237, 1) 39%, rgba(0, 174, 255, 1) 100%);
 }
