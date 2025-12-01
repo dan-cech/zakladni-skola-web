@@ -6,53 +6,50 @@ body {
     margin: 0;
 }
 
-p, h1, h2 {
+p, h1, h2, h3 {
     font-family: sans-serif;
     text-align: center;
+    align-items: center;
 }
 
-.uvod h1 {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 80px;
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-    margin-top: 200px;
+p {
+    font-size: 25px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 70px;
 }
-.uvod h2 {
+
+h3 {
     text-align: center;
     font-family: sans-serif;
-    font-size: 30px;
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-    margin-top: -20px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+hr {
+    margin-top: 35px;
+    border-width: 10px;
+    border-color: #7793ed;
+    height: 20px;
+    background-color: #7793ed;
+    border-style: solid;
+}
+
+section{
+    scroll-margin-top: 120px;
 }
 
 .nav {
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 110px;
+    position: fixed;
+    z-index: 10;
     justify-content: center;
     gap: 60px;
     background: #7793ed;
     background: linear-gradient(180deg, rgba(119, 147, 237, 1) 39%, rgba(0, 174, 255, 1) 100%);
-}
-
-.uvod .uvod_img{
-    margin-top: -100;
-    width: 100%;
-    height:900px;
-    position: absolute;
-    z-index: -5;
-    filter: brightness(0.8);
-}
-
-.uvod #rectangle{
-    width: 100%;
-    margin-top: 380px;
-    height: 60px;
-    background: #7793ed;
-    background: linear-gradient(0deg, rgba(119, 147, 237, 1) 39%, rgba(0, 174, 255, 1) 100%);
 }
 
 .nav a{
@@ -74,6 +71,39 @@ p, h1, h2 {
     filter: invert(1);
     left: 500px;
     transform: scale(0.9)
+}
+
+.uvod {
+    position: relative;
+    padding-top: 150px;
+    height:70vh
+}
+
+.uvod h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 80px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    margin-top: 100px;
+}
+
+.uvod h2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    margin-top: -20px;
+}
+
+.uvod .uvod_img{
+    margin-top: -75px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -5;
+    filter: brightness(0.8);
 }
 
 .contact-row{
@@ -125,13 +155,6 @@ p, h1, h2 {
     color: gray;
 }
 
-.contact-frame .link{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 10px;
-}
-
 .contact-frame .link img{
     width: 35px;
     height: 35px;
@@ -140,4 +163,63 @@ p, h1, h2 {
 
 .contact-frame .link img:hover{
     transform: scale(1.1);
+}
+
+.footer {
+    background-color: #7793ed;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+/*-------*/
+
+.gallery-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.gallery-frame{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 370px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gallery-frame .photo{
+    display: block;
+    align-self: center;
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: 0.15s;
+}
+
+.gallery-frame img:hover{
+    transform: scale(1.02);
+}
+
+.gallery-frame h2{
+    font-weight: 500;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 2px;
+}
+.gallery-frame p{
+    font-weight: 300;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 2px;
+    text-align: left;
+    font-size: 18px;
+    color: gray;
 }
